@@ -2,9 +2,10 @@
 import './App.css';
 import {createBrowserRouter,RouterProvider} from 'react-router-dom';
 import RootLayout from './components/RootLayout';
-import  Home from './components/Home/Home';
-import Mycalendar from './components/Mycalendar/Mycalendar';
-import Widgets from './components/Widgets/Widgets';
+import  Home from './components/Home';
+import Mycalendar from './components/MyCalendar';
+import Widgets from './components/Widgets';
+import Addcard from './components/Addcard';
 
 function App() {
 
@@ -18,13 +19,17 @@ function App() {
           element:<Home />
         },
         {
-          path:"/Mycalendar",
+          path:"/MyCalendar",
           element:<Mycalendar />
         },
         {
           path:"/Widgets",
           element:<Widgets />
         },
+        {
+          path:"/Addcard",
+          element:<Addcard/>
+        }
       ]
     }
   ])

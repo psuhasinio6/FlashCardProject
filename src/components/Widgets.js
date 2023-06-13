@@ -13,19 +13,11 @@ function Widgets(){
     })},[])
     console.log(data);
    
-    // const deleteCard=(card)=>{
-    //     Axios.delete('http://localhost:3001/api/delete/${card}');
-    // };
-
-    // cosnt updateCard=(card)=>{
-    //     Axios.put("http://")
-    // }
-
+  
 
     return (
 
         <div className="widgets">
-         {/* <h2 style={{ color:'blue',marginLeft:50}}>Flash Cards</h2> */}
         <div className="cardstyle" >
             {data.map((val)=>{
                 return(
@@ -33,10 +25,6 @@ function Widgets(){
                         <div className="card">
                         <h5 style={{color:'blue',fontWeight:'700'}}>{val.question}</h5>
                         <h5 style={{color:'blue',fontWeight:'300'}}>{val.answer}</h5>
-                       
-                        {/* <button onClick={()=> {deleteCard(val.question)}}>Delete</button>
-                      
-                        <button>Update</button> */}
                        
                        <span className="dots"><FiMoreVertical /></span>
                     </div>

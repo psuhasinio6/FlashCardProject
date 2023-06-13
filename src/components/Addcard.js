@@ -29,9 +29,7 @@ function Addcard(){
         console.log(question);
     }
 
-    // const deleteCard=(card)=>{
-    //     Axios.delete('http://localhost:3001/api/delete/${card}');
-    // };
+  
     
     return(
        <div style={{display:'flex',justifyContent:"center",alignItems:"center",marginTop:100}}>

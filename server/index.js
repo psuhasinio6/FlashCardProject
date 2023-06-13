@@ -38,25 +38,7 @@ app.post("/api/insert", (req,res) =>{
     })
 });
     
-// app.delete("/api/delete/:question", (req,res)=>{
-//     const name=req.params.question
-//     const sqlDelete=
-//         "DELETE FROM fctable WHERE question= ?";
 
-//     db.query(sqlDelete, name, (err,result)=>{
-//          if (err) console.log(err)
-//     })
-// })
-
-// app.put("/api/update", (req,res)=>{
-//     const question = req.params.question;
-//     const answer=req.body.answer;
-//     const sqlUpdate = "UPDATE SET fctable answer = ? WHERE question=?";
-
-//     db.query(SqlUpdate, [question,answer],(err,result)=>{
-//         if (err) console.log(err)
-//     })
-// })
 app.listen(3001, ()=>{
     console.log("running on port 3001");
 })
